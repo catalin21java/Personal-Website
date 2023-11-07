@@ -1,0 +1,254 @@
+  body, html {
+      height: 75vh;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+    
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .bgimg-1 {
+      background-image: url("bckg.jpg");
+      min-height: 100%;
+    }
+    .bgimg-2 {
+      background-image: url("bckg.jpg");
+      min-height: 50%;
+    }
+    
+    
+  .leftside, .rightside{
+
+    height:75vh;
+    width: 100%;
+    
+
+  }
+  .leftside
+  {
+    background: #aea49b;
+    
+  }
+  .rightside
+  {
+    background-image:url("C1.JPG");
+    background-size:cover ;
+    background-position: center;
+    
+  }
+
+    
+    
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      text-align: left;
+      padding-left  : 20%;
+      color: #000;
+    }
+    
+    .caption span.borders {
+     
+      color: black;
+      padding: 1px;
+      font-size: 6vh ;
+      letter-spacing: 5px;
+    }
+    
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+    
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+      }
+      .leftside,.rightside
+      {
+        height: 100vh;
+      }
+    }
+
+    @media  screen and (max-device-width: 768px) {
+    
+    
+    }
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .sections
+  {
+    color: #777;
+    background-color:#aea49b    ; 
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+  }
+
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+  }
+
+  .header::after {
+    content: "";
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transition: 0.8s;
+  }
+
+  .header:hover::after {
+    left: 100%;
+  }
+
+  .logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .nav-item {
+    position: relative;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.13px;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-item:hover {
+    color: skyblue;
+  }
+
+  .icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+
+
+  #check {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .header {
+      padding: 1.3rem 5%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .icons {
+      display: inline-flex;
+    }
+
+    #check:checked ~ .icons #menu-icon {
+      display: none;
+    }
+
+    .icons #close-icon {
+      display: none;
+    }
+
+    #check:checked ~ .icons #close-icon {
+      display: block;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(50px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    #check:checked ~ .navbar {
+      height: 17.7rem;
+    }
+
+    .nav-item {
+      display: block;
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      transform: translateY(-50px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    #check:checked ~ .navbar a {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: calc(0.15s * var(--i));
+    }
+
+
+  }
+
+    
