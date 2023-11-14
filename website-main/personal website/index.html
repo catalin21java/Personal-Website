@@ -18,10 +18,8 @@
     </label>
 
     <nav class="navbar">
-      <a href="#" class="nav-item" style="--i: 0">Home</a>
-      <a href="#" class="nav-item" style="--i: 1">About</a>
-      <a href="#" class="nav-item" style="--i: 2">Gallery</a>
-      <a href="#" class="nav-item" style="--i: 3">Services</a>
+      <a href="#" class="nav-item" style="--i: 0">About</a>
+      <a href="#" class="nav-item" style="--i: 1">Projects</a>
       <a href="#" class="nav-item" style="--i: 4">Contact</a>
     </nav>
   </header>
@@ -29,7 +27,7 @@
 
     <div class="bgimg-1">
       <div class="caption">
-        <span class="borders">HEY    !<br>I'm Cătălin Borzei.
+        <span class="borders">I'm <span class="auto-input"></span>
         </span>
         
         
@@ -77,7 +75,7 @@
 
 <div style="position: relative; ">
   <div class="sections">
-    <h3 style="text-align:center; font-size:4vh;">ABOUT ME</h3>
+    <h3 style="text-align:center; font-size:4vh;">Projects</h3>
     <p style="font-size: 2.5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
        Nam vehicula lectus consectetur blandit fermentum. Aliquam 
        in tempus justo, sit amet viverra enim. Donec at tortor vitae 
@@ -98,7 +96,7 @@
 <!-- HERE WE WILL TALK ABOUT MY PROJECT AND HAVE DIFFERENT PAGE FOR PHOTOS AND OTHER STUFF-->
 <div style="position:relative;">
   <div class="sections">
-    <h3 style="text-align:center; font-size:4vh;">PROJECTS</h3>
+    <h3 style="text-align:center; font-size:4vh;">Contact</h3>
     <p style="font-size: 2.5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
        Nam vehicula lectus consectetur blandit fermentum. Aliquam 
        in tempus justo, sit amet viverra enim. Donec at tortor vitae 
@@ -116,27 +114,19 @@
   </div>
 </div>
 
-<!-- HERE WE WILL TALK ABOUT MY SKILSETS AND HAVE SOME DEMOS(BARS)-->
-<div style="position:relative;">
-  <div class="sections">
-    <h3 style="text-align:center; font-size:4vh;">MY SKILLSET</h3>
-    <p style="font-size: 2.5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-       Nam vehicula lectus consectetur blandit fermentum. Aliquam 
-       in tempus justo, sit amet viverra enim. Donec at tortor vitae 
-       tellus rhoncus vestibulum eu ut felis. Curabitur feugiat nisl
-        at nisi tempus, ac ultricies sapien mollis. Mauris fermentum
-         at purus non tincidunt. Donec tellus urna, iaculis a ornare vitae,
-          luctus a metus. Nam accumsan sodales sodales. Etiam et ex quis dui suscipit molestie sed et ante.</p>
 
-    </div>
-</div>
-
-<div class="bgimg-2">
-  <div class="caption">
-    <span class="borders"></span>
-  </div>
-</div>
 
 <script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".auto-input",{
+
+strings:["Catalin Borzei!","Front-End enthusiast!","Java enthusiast!","UI Designer!","Robotics enthusiast!","UE5 fan!"],
+typeSpeed:100,
+backSoeed:100,
+loop:true
+
+})
+</script>
 </body>
 </html>

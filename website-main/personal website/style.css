@@ -7,7 +7,7 @@
     
     .bgimg-1, .bgimg-2, .bgimg-3 {
       position: relative;
-      opacity: 0.65;
+      opacity: 1;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -15,11 +15,11 @@
     }
     
     .bgimg-1 {
-      background-image: url("bckg.jpg");
+      background-image: url("bckg1.png");
       min-height: 100%;
     }
     .bgimg-2 {
-      background-image: url("bckg.jpg");
+      background-image: url("bckg1.png");
       min-height: 50%;
     }
     
@@ -47,21 +47,25 @@
     
     
     .caption {
+    
       position: absolute;
       left: 0;
-      top: 25%;
+      top: 40%;      
       width: 100%;
       text-align: left;
       padding-left  : 20%;
-      color: #000;
+      color: #D558df;
+      -webkit-user-drag: none;
+      user-select: none;
     }
     
     .caption span.borders {
-     
-      color: black;
+     -webkit-user-drag: none;
+      color: #D558df;
       padding: 1px;
-      font-size: 6vh ;
+      font-size: 8vh ;
       letter-spacing: 5px;
+      
     }
     
     h3 {
@@ -154,14 +158,14 @@
 
   .logo {
     font-size: 2rem;
-    color: #fff;
+    color: #D558df;
     text-decoration: none;
     font-weight: 700;
   }
 
   .nav-item {
     position: relative;
-    color: #fff;
+    color: #D558df   ;
     font-size: 1.15rem;
     font-weight: 500;
     line-height: 25px;
@@ -179,7 +183,7 @@
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: #fff;
+    color: #D558df;
     cursor: pointer;
     display: none;
   }
